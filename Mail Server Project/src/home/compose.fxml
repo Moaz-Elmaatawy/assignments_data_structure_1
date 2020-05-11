@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.compose_Controller">
+    <children>
+      <ImageView fitHeight="582.0" fitWidth="722.0">
+         <image>
+            <Image url="@../images/EMAIL.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="898.0" layoutY="1.0" prefHeight="32.0" prefWidth="77.0" />
+      <Pane layoutX="-30.0" layoutY="321.0" prefHeight="108.0" prefWidth="185.0" />
+        <Button fx:id="btnMinimize" blendMode="LIGHTEN" layoutX="686.0" layoutY="1.0" mnemonicParsing="false" onAction="#Minimize" prefHeight="0.0" prefWidth="16.0" style="-fx-background-color: #404040;" />
+        <Button fx:id="btnClose" blendMode="LIGHTEN" layoutX="704.0" layoutY="1.0" mnemonicParsing="false" onAction="#Clsoe" prefHeight="25.0" prefWidth="14.0" style="-fx-background-color: #404040;" />
+      <Button fx:id="discard" layoutX="616.0" layoutY="547.0" mnemonicParsing="false" onAction="#discard" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: #FF0000;" text="Discard Draft" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="9.0" />
+         </font></Button>
+      <JFXToggleButton fx:id="important" layoutX="153.0" layoutY="468.0" onAction="#important" prefHeight="56.0" prefWidth="128.0" text="Important" toggleColor="#ffdf00" toggleLineColor="#d4af37">
+         <font>
+            <Font name="Gill Sans MT" size="12.0" />
+         </font>
+      </JFXToggleButton>
+      <JFXTextField fx:id="Recipients" layoutX="4.0" layoutY="39.0" maxWidth="713.0" minWidth="480.0" prefHeight="29.0" prefWidth="713.0" promptText="Recipients" />
+      <JFXTextField fx:id="Subject" layoutX="4.0" layoutY="80.0" maxWidth="715.0" minWidth="470.0" prefHeight="29.0" prefWidth="715.0" promptText="Subject" />
+      <JFXTextArea fx:id="body" layoutX="8.0" layoutY="148.0" maxWidth="704.0" minWidth="464.0" prefHeight="300.0" prefWidth="704.0" promptText="Type here your message" />
+        <Button fx:id="btnAttach" alignment="TOP_RIGHT" blendMode="MULTIPLY" layoutX="89.0" layoutY="552.0" mnemonicParsing="false" onAction="#eventbtn_attach" prefHeight="18.0" prefWidth="76.0" style="-fx-background-color: #FFFFFF;" text="Attachment">
+         <font>
+            <Font name="System Bold Italic" size="9.0" />
+         </font>
+      </Button>
+        <Button fx:id="Send" layoutX="8.0" layoutY="547.0" mnemonicParsing="false" onAction="#btnSend" prefHeight="25.0" prefWidth="54.0" style="-fx-background-color: #1A73E8;" text="Send" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+      <Label layoutX="15.0" layoutY="488.0" text="Attachments">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choose" blendMode="MULTIPLY" layoutX="93.0" layoutY="485.0" onMouseClicked="#test" prefHeight="14.0" prefWidth="56.0" />
+    </children>
+</AnchorPane>
