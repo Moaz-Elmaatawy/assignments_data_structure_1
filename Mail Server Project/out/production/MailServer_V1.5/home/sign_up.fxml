@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<GridPane alignment="center" hgap="10" prefHeight="720.0" prefWidth="978.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.sign_up_Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="720.0" prefWidth="968.0">
+         <children>
+            <ImageView fitHeight="720.0" fitWidth="978.0" layoutX="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/signup_final1-2.png" />
+               </image></ImageView>
+            <TextField fx:id="nickname" layoutX="378.0" layoutY="214.0" prefHeight="31.0" prefWidth="327.0" promptText="Your Full Name" style="-fx-background-color: #FFFFFF;" />
+            <TextField fx:id="phone_number" layoutX="378.0" layoutY="280.0" prefHeight="31.0" prefWidth="327.0" promptText="Phone number +20 XXX XXXXXXXX" style="-fx-background-color: #FFFFFF;" />
+            <TextField fx:id="Username" layoutX="378.0" layoutY="345.0" prefHeight="31.0" prefWidth="327.0" promptText="Username" style="-fx-background-color: #FFFFFF;" />
+            <PasswordField fx:id="Password_1" layoutX="378.0" layoutY="412.0" prefHeight="31.0" prefWidth="327.0" promptText="Password" style="-fx-background-color: #FFFFFF;" />
+            <PasswordField fx:id="Password_2" layoutX="378.0" layoutY="477.0" prefHeight="31.0" prefWidth="327.0" promptText="Confirm Password" style="-fx-background-color: #FFFFFF;" />
+            <Button fx:id="Login" layoutX="477.0" layoutY="641.0" mnemonicParsing="false" onAction="#eventButton_2" style="-fx-background-color: #FFFFFF;" text="Already member" underline="true" />
+            <JFXButton fx:id="SignUP" layoutX="350.0" layoutY="569.0" onAction="#eventButton_1" prefHeight="54.0" prefWidth="349.0" text="Sign UP" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="Cancel" layoutX="932.0" onAction="#cancelButton" text="X" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
